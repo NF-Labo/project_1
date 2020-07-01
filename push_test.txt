@@ -1,3 +1,8 @@
-push test
 間違えて、大喜のファイル消しちゃいました...
 ごめんなさい...
+
+原因としては、masterのbranchに直接pushしちゃダメで、
+git push -f origin master
+で強制的にやっちゃったのが原因かな？
+
+対処法としては、別branch作ってそこにpushしてmergeで統合
